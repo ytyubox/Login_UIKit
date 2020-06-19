@@ -27,6 +27,11 @@ class ViewController: UIViewController {
                 height: h)
         }
         oauth.oAuthDelegate = self
+        
+        let button = NPAuthButton(oAuth: oauth)
+        button.npProvider = self
+        view.addSubview(button)
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
     }
 
 
@@ -48,6 +53,18 @@ extension ViewController: OAuthDelegate {
         } catch {
             message = error.localizedDescription
         }
+    }
+    
+    
+}
+
+extension ViewController: NPAuthProvider.NPProvider {
+    func name() -> String {
+        "textField.Name"
+    }
+    
+    func password() -> String {
+        "textField.password"
     }
     
     

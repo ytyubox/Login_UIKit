@@ -15,7 +15,7 @@ protocol OAuthDelegate:AnyObject {
 class OAuth {
     typealias OAuthResult =  Result<OAuthCredential,Error>
     static func makeAvaliableButtons(oAuth: OAuth) -> [OAuthButton] { [
-        AppleOAuthButton(oAuth: oAuth)
+        AppleOAuthButton(oAuth: oAuth),
         ]
     }
     var provider:OAuthProvider?

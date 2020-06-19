@@ -22,6 +22,8 @@
 		A7C257C8249CB43600CC3F0C /* AnyOauthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C257C7249CB43600CC3F0C /* AnyOauthError.swift */; };
 		A7C257CB249CB47F00CC3F0C /* OAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C257CA249CB47F00CC3F0C /* OAuthCredential.swift */; };
 		A7C257CD249CB4BA00CC3F0C /* OauthID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C257CC249CB4BA00CC3F0C /* OauthID.swift */; };
+		A7C257D1249CBA2B00CC3F0C /* NPAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C257D0249CBA2B00CC3F0C /* NPAuthProvider.swift */; };
+		A7C257D3249CBA6200CC3F0C /* NPAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C257D2249CBA6200CC3F0C /* NPAuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		A7C257CA249CB47F00CC3F0C /* OAuthCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredential.swift; sourceTree = "<group>"; };
 		A7C257CC249CB4BA00CC3F0C /* OauthID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OauthID.swift; sourceTree = "<group>"; };
 		A7C257CE249CB7DB00CC3F0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A7C257D0249CBA2B00CC3F0C /* NPAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAuthProvider.swift; sourceTree = "<group>"; };
+		A7C257D2249CBA6200CC3F0C /* NPAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				A7C257B8249C8C6F00CC3F0C /* Oauth.swift */,
 				A7C257C1249C9B0200CC3F0C /* P_OAuthProvider.swift */,
 				A7C257BF249C99A300CC3F0C /* OAuthButton.swift */,
+				A7C257CF249CBA1300CC3F0C /* NamePasswordAuth */,
 				A7C257C5249C9B8600CC3F0C /* ServerAuth */,
 				A7C257BA249C8C7700CC3F0C /* AppleOAuth */,
 				A7C257C9249CB43C00CC3F0C /* OAuthSupportTypes */,
@@ -128,6 +133,15 @@
 				A7C257CC249CB4BA00CC3F0C /* OauthID.swift */,
 			);
 			path = OAuthSupportTypes;
+			sourceTree = "<group>";
+		};
+		A7C257CF249CBA1300CC3F0C /* NamePasswordAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A7C257D0249CBA2B00CC3F0C /* NPAuthProvider.swift */,
+				A7C257D2249CBA6200CC3F0C /* NPAuthButton.swift */,
+			);
+			path = NamePasswordAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,12 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C257BE249C996F00CC3F0C /* AppleOAuthButton.swift in Sources */,
+				A7C257D3249CBA6200CC3F0C /* NPAuthButton.swift in Sources */,
 				A7C257A8249C8C3F00CC3F0C /* ViewController.swift in Sources */,
 				A7C257BC249C8C9000CC3F0C /* AppleOAuthProvider.swift in Sources */,
 				A7C257C8249CB43600CC3F0C /* AnyOauthError.swift in Sources */,
 				A7C257C2249C9B0200CC3F0C /* P_OAuthProvider.swift in Sources */,
 				A7C257A4249C8C3F00CC3F0C /* AppDelegate.swift in Sources */,
 				A7C257A6249C8C3F00CC3F0C /* SceneDelegate.swift in Sources */,
+				A7C257D1249CBA2B00CC3F0C /* NPAuthProvider.swift in Sources */,
 				A7C257C0249C99A300CC3F0C /* OAuthButton.swift in Sources */,
 				A7C257CB249CB47F00CC3F0C /* OAuthCredential.swift in Sources */,
 				A7C257B9249C8C6F00CC3F0C /* Oauth.swift in Sources */,
